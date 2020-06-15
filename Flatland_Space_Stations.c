@@ -3,13 +3,16 @@
 int main()
 {
     long int n, m, val, p=0, q=0;
-    long dis[n], left[n], right[n];
 
     scanf("%ld %ld", &n, &m);
+    
+    long dis[n], left[n], right[n];
 
     for (int i=0; i<n; i++)
     {
         dis[i]=-1;
+        right[i]=0;
+        left[i]=0;
     }
 
     for (int i=0; i<n; i++)
